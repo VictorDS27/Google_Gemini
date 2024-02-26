@@ -1,0 +1,55 @@
+:root{
+        --bard-color-surface: #131314;
+        --bard-color-brand-text-gradient-stop-1: #4285f4;
+        --bard-color-brand-text-gradient-stop-1-rgb: 66, 133, 244;
+        --bard-color-brand-text-gradient-stop-2: #9b72cb;
+        --bard-color-brand-text-gradient-stop-2-rgb: 155, 114, 203;
+        --bard-color-brand-text-gradient-stop-3: #d96570;
+        --bard-color-brand-text-gradient-stop-3-rgb: 217, 101, 112;
+}
+
+
+main{
+        max-width: 80rem;
+        margin-left: 265px;
+}
+
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 0rem 1rem;
+}
+
+header p{
+        color: #caccce;
+        font-size: 1.2rem;
+        font-weight: 100;
+}
+
+header img{
+        width: 3rem;
+        border-radius: 25px;
+}
+
+/* SECTION */
+
+section{
+        padding: 2rem 8rem;
+}
+
+section .section_title h1{
+        font-weight: 800;
+        color: transparent;
+        font-size: 3rem;
+        background: linear-gradient(16deg, var(--bard-color-brand-text-gradient-stop-1) 0, var(--bard-color-brand-text-gradient-stop-2) 9%, var(--bard-color-brand-text-gradient-stop-3) 20%, var(--bard-color-brand-text-gradient-stop-3) 24%, var(--bard-color-brand-text-gradient-stop-2) 35%, var(--bard-color-brand-text-gradient-stop-1) 44%, var(--bard-color-brand-text-gradient-stop-2) 50%, var(--bard-color-brand-text-gradient-stop-3) 56%, var(--bard-color-surface) 75%, var(--bard-color-surface) 100%);
+        background-clip: text;
+}
+
+section .section_title span{
+        color: #444746;
+        background: transparent;
+        font-weight: 800;
+        font-size: 3rem;
+}

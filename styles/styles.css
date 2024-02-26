@@ -1,0 +1,19 @@
+@import url(sidebar.css);
+@import url(main.css);
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../fonts/GoogleSans-Regular.ttf)
+  }
+
+*{
+    font-family: 'GoogleSans';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #131314;
+}
