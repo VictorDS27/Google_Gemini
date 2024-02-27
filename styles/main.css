@@ -11,6 +11,7 @@
 
 main{
         max-width: 80rem;
+        max-height: 100%;
         margin-left: 265px;
 }
 
@@ -18,13 +19,13 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
-        padding: 0rem 1rem;
+        height: 100%;
+        padding: 1rem 1rem;
 }
 
 header p{
         color: #caccce;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 100;
 }
 
@@ -36,14 +37,23 @@ header img{
 /* SECTION */
 
 section{
-        padding: 2rem 8rem;
+        padding: 1.5rem 8rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+
+
+section .section_title{
+        display: flex;
+        flex-direction: column;
 }
 
 section .section_title h1{
         font-weight: 800;
         color: transparent;
-        font-size: 3rem;
-        background: linear-gradient(16deg, var(--bard-color-brand-text-gradient-stop-1) 0, var(--bard-color-brand-text-gradient-stop-2) 9%, var(--bard-color-brand-text-gradient-stop-3) 20%, var(--bard-color-brand-text-gradient-stop-3) 24%, var(--bard-color-brand-text-gradient-stop-2) 35%, var(--bard-color-brand-text-gradient-stop-1) 44%, var(--bard-color-brand-text-gradient-stop-2) 50%, var(--bard-color-brand-text-gradient-stop-3) 56%, var(--bard-color-surface) 75%, var(--bard-color-surface) 100%);
+        font-size: 3.5rem;
+        background-image: linear-gradient(to right, #4285f4, #ae6dc2, #d96570);
         background-clip: text;
 }
 
@@ -51,5 +61,132 @@ section .section_title span{
         color: #444746;
         background: transparent;
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 3.5rem;
+}
+
+/* CARD */
+
+.content{
+        width: 100%;
+        margin: 3rem 0 1rem 0;
+}
+
+.content .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+}
+
+.content .card-container .card{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #1e1f20;
+        border-radius: 10px;
+        padding: 1rem;
+        transition: .3s;
+}
+
+.content .card-container .card .card-title{
+        width: 100%;
+        left: 0;
+}
+
+.content .card-container .card .card-title p{
+        color: #fff;
+}
+
+.content .card-container .card .card-icon{
+        bottom: 1rem;
+        right: 1rem;
+        position: absolute;
+        background-color: #131314;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+}
+
+.content .card-container .card:hover{
+        background-color: #333537 ;
+}
+
+
+.content .card-container .card .card-icon i{
+        color: #fff;
+        font-size: 1.3rem;
+}
+
+/* FOOTER */
+
+footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 265px;
+        height: 105px;
+        width: 85%;
+        background-color: #131314;
+        -webkit-box-shadow: 11px -11px 46px -18px rgba(0,0,0,0.75);
+        -moz-box-shadow: 11px -11px 46px -18px rgba(0,0,0,0.75);
+        box-shadow: 11px -11px 46px -18px rgba(0,0,0,0.75);
+}
+
+footer .formulario{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem 11rem 0.5rem 8rem ;
+        padding: 1.5rem;
+        height: 65px;
+        background-color: #1e1f20;
+        border-radius: 30px;
+}
+
+footer .formulario form input{
+        background-color: #1e1f20;
+        width: 400px;
+        border: none;
+        outline: none;
+}
+
+footer .formulario form input::-webkit-input-placeholder{
+        color: #bcc0c5;
+        font-size: 1rem;
+}
+
+footer .formulario .form_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100px;
+        height: 50px;
+}
+
+footer .formulario .form_icons i{
+        color: #fff;
+        font-size: 1.2rem;
+}
+
+footer .footer_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 11rem 1rem 8rem ;
+        height: 20px;
+}
+
+footer .footer_text p{
+        color: #bcc0c5;
+        font-size: 13px;
+}
+
+footer .footer_text p a{
+        color: #bcc0c5;
+        text-decoration: underline;
 }
